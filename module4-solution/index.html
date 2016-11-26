@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Restaurant Menu</title>
+  </head>
+  <body>
+    <h1>Welcome to our Restaurant</h1>
+
+    <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/menuCat/menuapp.module.js"></script>
+    <script src="src/menuCat/data.module.js"></script>
+
+    <!--Service to get data using http -->
+    <script src="src/menuCat/menudata.service.js"></script>
+
+    <!-- Two components of the SPA -->
+    <script src="src/menuCat/categories.component.js"></script>
+    <script src="src/menuCat/items.component.js"></script>
+
+    <!-- Routes and State Controllers -->
+    <script src="src/menuCat/routes.js"></script>
+    <script src="src/menuCat/categories.controller.js"></script>
+    <script src="src/menuCat/items.controller.js"></script>    
+  </body>
+</html>
