@@ -1,0 +1,26 @@
+<div class="myinfo">
+  <h2>Registered Information</h2>
+  <div>
+    <span>First Name: </span>
+    <span>{{$ctrl.userInfo.fname}}</span>
+    <br>
+    <span>Last Name: </span>
+    <span>{{$ctrl.userInfo.lname}}</span>
+    <br>
+    <span>Email: </span>
+    <span>{{$ctrl.userInfo.email}}</span>
+    <br>
+    <span>Phone: </span>
+    <span>{{$ctrl.userInfo.phone}}</span>
+    <br>
+    <span>Menu number of favorite dish: </span>
+    <span>{{$ctrl.userInfo.short_name}}</span>
+    <br>
+    <div id="name">
+      <span>{{$ctrl.userInfo.fav_item.name}}</span>
+      <p>{{$ctrl.userInfo.fav_item.description}}</p>
+    </div>
+    <img class="img-responsive" width="300" height="300" ng-src="{{$ctrl.basePath}}/images/{{$ctrl.userInfo.short_name}}.jpg" alt="{{$ctrl.userInfo.fav_item.name}}">
+  </div>
+  
+</div>

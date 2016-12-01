@@ -1,0 +1,13 @@
+<div class="container">
+	<div ng-if="infoCtrl.error" id="infoError" class="infoErr">
+
+		<h2>{{infoCtrl.error}}!!!</h2>
+		<br>
+		<a id="#sign" ui-sref="public.reg">Sign up Now! </a>
+
+	</div>
+
+	<fav-item ng-if="infoCtrl.error == false" user-info="infoCtrl.user">
+	
+  	</fav-item> 
+</div>
